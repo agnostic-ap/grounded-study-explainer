@@ -8,11 +8,11 @@
 
 Provider-neutral TypeScript primitives for generating, parsing, validating, and deterministically evaluating evidence-grounded study explanations.
 
-The core rule is deliberately strict: a model may cite only stable evidence IDs supplied by the host. Malformed output, unknown citations, or missing uncertainty boundaries become typed failures instead of user-visible explanations.
+It follows one strict rule: a model may cite only stable evidence IDs supplied by the host. Malformed output, unknown citations, or missing uncertainty boundaries become typed failures instead of user-visible explanations.
 
-## Production integration example
+## Product integration example
 
-The screenshot below comes from a downstream exam-preparation product using this library. The host application retrieves reviewed content, assigns evidence IDs, applies quotas, stores quality logs, and renders the UI; those product-specific layers are not bundled with the library.
+The screenshot below comes from [Jiangsu Self-study Exam Helper](https://jszkbang.cn), a downstream product using this library. The host application retrieves reviewed content, assigns evidence IDs, applies quotas, stores quality logs, and renders the UI; those product-specific layers are not bundled with the library.
 
 ![A production learning-diagnosis card showing structured diagnosis, key points, next actions, option analysis, and validated evidence](./docs/assets/production-integration-example.png)
 
@@ -28,8 +28,6 @@ A normal LLM integration often stops at `prompt -> text`. This library adds a na
 - insufficient evidence requires an explicit uncertainty statement;
 - deterministic checks produce a reproducible score and failure reasons;
 - rejected model content is never returned as a trusted explanation.
-
-It has no runtime dependency on Fastify, Express, Drizzle, React, a database, or a model vendor.
 
 ## Architecture
 
@@ -66,8 +64,6 @@ The host owns retrieval, authorization, quotas, logging, and presentation. The l
 
 ## Install
 
-The source is published on GitHub. An npm registry release is not claimed yet.
-
 Install the tagged GitHub source:
 
 ```bash
@@ -84,13 +80,13 @@ npm test
 npm run build
 ```
 
-Requires Node.js 20 or newer.
+Requires **Node.js 20** or newer.
 
 ## Integration guide
 
 ### 1. Retrieve trusted evidence in the host
 
-Do not accept question text, correct answers, or evidence allowlists from the browser. Retrieve reviewed records on the server and assign stable IDs there.
+Do not trust client-supplied question text, correct answers, or evidence allowlists. Retrieve reviewed records on the server and assign stable IDs there.
 
 ```ts
 const evidence = [
@@ -241,20 +237,7 @@ The checked-in fixture report currently records:
 - expected-valid output pass rate: 100%;
 - invalid-evidence false accepts: 0.
 
-These are deterministic core conformance results from a fixture provider. They are **not** model-quality, production-success-rate, factual-accuracy, or network-latency metrics.
-
-## Security and privacy checklist
-
-- Retrieve evidence and build the allowlist in trusted server code.
-- Treat question, answer, and evidence strings as untrusted model data.
-- Never display rejected raw model output as a fallback.
-- Do not copy private records, learner data, prompts, or API keys into logs or public fixtures.
-- Record model version, latency, format validity, citation violations, evaluation score, and failure reason as operational metadata.
-- Keep authentication, authorization, quotas, rate limits, and abuse controls in the host application.
-
-## Non-goals
-
-This library does not retrieve data, authenticate users, enforce quotas, call a specific model vendor, persist logs, render UI, or prove the factual correctness of a model answer. It does not require vector search, multi-agent orchestration, fine-tuning, or MCP.
+These results come from **Structured Output conformance checks** using a fixture provider. They are **not** model-quality, production-success-rate, factual-accuracy, or network-latency metrics.
 
 ## Repository layout
 

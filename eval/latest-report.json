@@ -1,0 +1,320 @@
+{
+  "reportKind": "deterministic_fixture_conformance",
+  "generatedAt": "2026-08-09T04:56:52.681Z",
+  "model": "fixture-provider-v1 (no external model call)",
+  "privacy": "30 synthetic samples; no production questions or user data",
+  "sampleCount": 30,
+  "validSampleCount": 27,
+  "adversarialSampleCount": 3,
+  "expectationAccuracy": 1,
+  "validOutputPassRate": 1,
+  "invalidEvidenceFalseAccepts": 0,
+  "averageCoreLatencyMs": 0.068,
+  "failureReasons": {
+    "invalid_json": 1,
+    "invalid_evidence": 1,
+    "insufficient_grounding": 1
+  },
+  "results": [
+    {
+      "id": "sc-01",
+      "questionType": "single_choice",
+      "scenario": "wrong_diagnosis",
+      "expectedPass": true,
+      "actualPass": true,
+      "actualReason": null,
+      "expectationMatched": true,
+      "coreLatencyMs": 0.519
+    },
+    {
+      "id": "sc-02",
+      "questionType": "single_choice",
+      "scenario": "correct_extension",
+      "expectedPass": true,
+      "actualPass": true,
+      "actualReason": null,
+      "expectationMatched": true,
+      "coreLatencyMs": 0.063
+    },
+    {
+      "id": "sc-03",
+      "questionType": "single_choice",
+      "scenario": "limited_evidence",
+      "expectedPass": true,
+      "actualPass": true,
+      "actualReason": null,
+      "expectationMatched": true,
+      "coreLatencyMs": 0.128
+    },
+    {
+      "id": "sc-04",
+      "questionType": "single_choice",
+      "scenario": "prompt_injection",
+      "expectedPass": true,
+      "actualPass": true,
+      "actualReason": null,
+      "expectationMatched": true,
+      "coreLatencyMs": 0.048
+    },
+    {
+      "id": "sc-05",
+      "questionType": "single_choice",
+      "scenario": "wrong_diagnosis",
+      "expectedPass": true,
+      "actualPass": true,
+      "actualReason": null,
+      "expectationMatched": true,
+      "coreLatencyMs": 0.043
+    },
+    {
+      "id": "sc-06",
+      "questionType": "single_choice",
+      "scenario": "invalid_output",
+      "expectedPass": false,
+      "actualPass": false,
+      "actualReason": "invalid_json",
+      "expectationMatched": true,
+      "coreLatencyMs": 0.019
+    },
+    {
+      "id": "mc-01",
+      "questionType": "multiple_choice",
+      "scenario": "wrong_diagnosis",
+      "expectedPass": true,
+      "actualPass": true,
+      "actualReason": null,
+      "expectationMatched": true,
+      "coreLatencyMs": 0.045
+    },
+    {
+      "id": "mc-02",
+      "questionType": "multiple_choice",
+      "scenario": "correct_extension",
+      "expectedPass": true,
+      "actualPass": true,
+      "actualReason": null,
+      "expectationMatched": true,
+      "coreLatencyMs": 0.04
+    },
+    {
+      "id": "mc-03",
+      "questionType": "multiple_choice",
+      "scenario": "limited_evidence",
+      "expectedPass": true,
+      "actualPass": true,
+      "actualReason": null,
+      "expectationMatched": true,
+      "coreLatencyMs": 0.118
+    },
+    {
+      "id": "mc-04",
+      "questionType": "multiple_choice",
+      "scenario": "prompt_injection",
+      "expectedPass": true,
+      "actualPass": true,
+      "actualReason": null,
+      "expectationMatched": true,
+      "coreLatencyMs": 0.064
+    },
+    {
+      "id": "mc-05",
+      "questionType": "multiple_choice",
+      "scenario": "wrong_diagnosis",
+      "expectedPass": true,
+      "actualPass": true,
+      "actualReason": null,
+      "expectationMatched": true,
+      "coreLatencyMs": 0.113
+    },
+    {
+      "id": "mc-06",
+      "questionType": "multiple_choice",
+      "scenario": "invalid_output",
+      "expectedPass": false,
+      "actualPass": false,
+      "actualReason": "invalid_evidence",
+      "expectationMatched": true,
+      "coreLatencyMs": 0.056
+    },
+    {
+      "id": "tf-01",
+      "questionType": "true_false",
+      "scenario": "wrong_diagnosis",
+      "expectedPass": true,
+      "actualPass": true,
+      "actualReason": null,
+      "expectationMatched": true,
+      "coreLatencyMs": 0.139
+    },
+    {
+      "id": "tf-02",
+      "questionType": "true_false",
+      "scenario": "correct_extension",
+      "expectedPass": true,
+      "actualPass": true,
+      "actualReason": null,
+      "expectationMatched": true,
+      "coreLatencyMs": 0.043
+    },
+    {
+      "id": "tf-03",
+      "questionType": "true_false",
+      "scenario": "limited_evidence",
+      "expectedPass": true,
+      "actualPass": true,
+      "actualReason": null,
+      "expectationMatched": true,
+      "coreLatencyMs": 0.037
+    },
+    {
+      "id": "tf-04",
+      "questionType": "true_false",
+      "scenario": "prompt_injection",
+      "expectedPass": true,
+      "actualPass": true,
+      "actualReason": null,
+      "expectationMatched": true,
+      "coreLatencyMs": 0.042
+    },
+    {
+      "id": "tf-05",
+      "questionType": "true_false",
+      "scenario": "wrong_diagnosis",
+      "expectedPass": true,
+      "actualPass": true,
+      "actualReason": null,
+      "expectationMatched": true,
+      "coreLatencyMs": 0.051
+    },
+    {
+      "id": "tf-06",
+      "questionType": "true_false",
+      "scenario": "invalid_output",
+      "expectedPass": false,
+      "actualPass": false,
+      "actualReason": "insufficient_grounding",
+      "expectationMatched": true,
+      "coreLatencyMs": 0.049
+    },
+    {
+      "id": "fb-01",
+      "questionType": "fill_blank",
+      "scenario": "wrong_diagnosis",
+      "expectedPass": true,
+      "actualPass": true,
+      "actualReason": null,
+      "expectationMatched": true,
+      "coreLatencyMs": 0.028
+    },
+    {
+      "id": "fb-02",
+      "questionType": "fill_blank",
+      "scenario": "correct_extension",
+      "expectedPass": true,
+      "actualPass": true,
+      "actualReason": null,
+      "expectationMatched": true,
+      "coreLatencyMs": 0.026
+    },
+    {
+      "id": "fb-03",
+      "questionType": "fill_blank",
+      "scenario": "limited_evidence",
+      "expectedPass": true,
+      "actualPass": true,
+      "actualReason": null,
+      "expectationMatched": true,
+      "coreLatencyMs": 0.03
+    },
+    {
+      "id": "fb-04",
+      "questionType": "fill_blank",
+      "scenario": "prompt_injection",
+      "expectedPass": true,
+      "actualPass": true,
+      "actualReason": null,
+      "expectationMatched": true,
+      "coreLatencyMs": 0.026
+    },
+    {
+      "id": "fb-05",
+      "questionType": "fill_blank",
+      "scenario": "wrong_diagnosis",
+      "expectedPass": true,
+      "actualPass": true,
+      "actualReason": null,
+      "expectationMatched": true,
+      "coreLatencyMs": 0.025
+    },
+    {
+      "id": "fb-06",
+      "questionType": "fill_blank",
+      "scenario": "correct_extension",
+      "expectedPass": true,
+      "actualPass": true,
+      "actualReason": null,
+      "expectationMatched": true,
+      "coreLatencyMs": 0.023
+    },
+    {
+      "id": "sa-01",
+      "questionType": "short_answer",
+      "scenario": "wrong_diagnosis",
+      "expectedPass": true,
+      "actualPass": true,
+      "actualReason": null,
+      "expectationMatched": true,
+      "coreLatencyMs": 0.026
+    },
+    {
+      "id": "sa-02",
+      "questionType": "short_answer",
+      "scenario": "correct_extension",
+      "expectedPass": true,
+      "actualPass": true,
+      "actualReason": null,
+      "expectationMatched": true,
+      "coreLatencyMs": 0.025
+    },
+    {
+      "id": "sa-03",
+      "questionType": "short_answer",
+      "scenario": "limited_evidence",
+      "expectedPass": true,
+      "actualPass": true,
+      "actualReason": null,
+      "expectationMatched": true,
+      "coreLatencyMs": 0.029
+    },
+    {
+      "id": "sa-04",
+      "questionType": "short_answer",
+      "scenario": "prompt_injection",
+      "expectedPass": true,
+      "actualPass": true,
+      "actualReason": null,
+      "expectationMatched": true,
+      "coreLatencyMs": 0.025
+    },
+    {
+      "id": "sa-05",
+      "questionType": "short_answer",
+      "scenario": "wrong_diagnosis",
+      "expectedPass": true,
+      "actualPass": true,
+      "actualReason": null,
+      "expectationMatched": true,
+      "coreLatencyMs": 0.023
+    },
+    {
+      "id": "sa-06",
+      "questionType": "short_answer",
+      "scenario": "correct_extension",
+      "expectedPass": true,
+      "actualPass": true,
+      "actualReason": null,
+      "expectationMatched": true,
+      "coreLatencyMs": 0.141
+    }
+  ]
+}

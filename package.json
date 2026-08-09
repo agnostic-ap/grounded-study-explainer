@@ -1,0 +1,54 @@
+{
+  "name": "@agnostic-ap/grounded-study-explainer",
+  "version": "0.1.0",
+  "description": "Provider-neutral grounded study explanation, validation, and deterministic evaluation for TypeScript.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/agnostic-ap/grounded-study-explainer.git"
+  },
+  "homepage": "https://github.com/agnostic-ap/grounded-study-explainer#readme",
+  "bugs": {
+    "url": "https://github.com/agnostic-ap/grounded-study-explainer/issues"
+  },
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "node --import tsx --test test/*.test.ts",
+    "eval": "node --import tsx cli/evaluate.ts",
+    "prepublishOnly": "npm test && npm run build"
+  },
+  "keywords": [
+    "grounded-ai",
+    "education",
+    "structured-output",
+    "evaluation"
+  ],
+  "license": "MIT",
+  "engines": {
+    "node": ">=20"
+  },
+  "files": [
+    "dist",
+    "index.ts",
+    "src",
+    "cli",
+    "eval",
+    "examples",
+    "test",
+    "README.md",
+    "LICENSE"
+  ],
+  "devDependencies": {
+    "tsx": "^4.19.4",
+    "typescript": "^5.8.3"
+  },
+  "packageManager": "npm@10"
+}

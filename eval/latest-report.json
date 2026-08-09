@@ -1,6 +1,6 @@
 {
   "reportKind": "deterministic_fixture_conformance",
-  "generatedAt": "2026-08-09T05:23:51.516Z",
+  "generatedAt": "2026-08-09T05:58:57.283Z",
   "model": "fixture-provider-v1 (no external model call)",
   "privacy": "30 synthetic samples; no production questions or user data",
   "sampleCount": 30,
@@ -9,7 +9,7 @@
   "expectationAccuracy": 1,
   "validOutputPassRate": 1,
   "invalidEvidenceFalseAccepts": 0,
-  "averageCoreLatencyMs": 0.077,
+  "averageCoreLatencyMs": 0.062,
   "failureReasons": {
     "invalid_json": 1,
     "invalid_evidence": 1,
@@ -24,7 +24,7 @@
       "actualPass": true,
       "actualReason": null,
       "expectationMatched": true,
-      "coreLatencyMs": 0.527
+      "coreLatencyMs": 0.469
     },
     {
       "id": "sc-02",
@@ -34,7 +34,7 @@
       "actualPass": true,
       "actualReason": null,
       "expectationMatched": true,
-      "coreLatencyMs": 0.078
+      "coreLatencyMs": 0.055
     },
     {
       "id": "sc-03",
@@ -44,7 +44,7 @@
       "actualPass": true,
       "actualReason": null,
       "expectationMatched": true,
-      "coreLatencyMs": 0.109
+      "coreLatencyMs": 0.106
     },
     {
       "id": "sc-04",
@@ -54,7 +54,7 @@
       "actualPass": true,
       "actualReason": null,
       "expectationMatched": true,
-      "coreLatencyMs": 0.046
+      "coreLatencyMs": 0.045
     },
     {
       "id": "sc-05",
@@ -64,7 +64,7 @@
       "actualPass": true,
       "actualReason": null,
       "expectationMatched": true,
-      "coreLatencyMs": 0.05
+      "coreLatencyMs": 0.038
     },
     {
       "id": "sc-06",
@@ -84,7 +84,7 @@
       "actualPass": true,
       "actualReason": null,
       "expectationMatched": true,
-      "coreLatencyMs": 0.047
+      "coreLatencyMs": 0.043
     },
     {
       "id": "mc-02",
@@ -94,7 +94,7 @@
       "actualPass": true,
       "actualReason": null,
       "expectationMatched": true,
-      "coreLatencyMs": 0.038
+      "coreLatencyMs": 0.039
     },
     {
       "id": "mc-03",
@@ -104,7 +104,7 @@
       "actualPass": true,
       "actualReason": null,
       "expectationMatched": true,
-      "coreLatencyMs": 0.108
+      "coreLatencyMs": 0.12
     },
     {
       "id": "mc-04",
@@ -124,7 +124,7 @@
       "actualPass": true,
       "actualReason": null,
       "expectationMatched": true,
-      "coreLatencyMs": 0.105
+      "coreLatencyMs": 0.109
     },
     {
       "id": "mc-06",
@@ -144,7 +144,7 @@
       "actualPass": true,
       "actualReason": null,
       "expectationMatched": true,
-      "coreLatencyMs": 0.1
+      "coreLatencyMs": 0.11
     },
     {
       "id": "tf-02",
@@ -164,7 +164,7 @@
       "actualPass": true,
       "actualReason": null,
       "expectationMatched": true,
-      "coreLatencyMs": 0.036
+      "coreLatencyMs": 0.035
     },
     {
       "id": "tf-04",
@@ -174,7 +174,7 @@
       "actualPass": true,
       "actualReason": null,
       "expectationMatched": true,
-      "coreLatencyMs": 0.036
+      "coreLatencyMs": 0.034
     },
     {
       "id": "tf-05",
@@ -184,7 +184,7 @@
       "actualPass": true,
       "actualReason": null,
       "expectationMatched": true,
-      "coreLatencyMs": 0.065
+      "coreLatencyMs": 0.043
     },
     {
       "id": "tf-06",
@@ -244,7 +244,7 @@
       "actualPass": true,
       "actualReason": null,
       "expectationMatched": true,
-      "coreLatencyMs": 0.025
+      "coreLatencyMs": 0.024
     },
     {
       "id": "fb-06",
@@ -264,7 +264,7 @@
       "actualPass": true,
       "actualReason": null,
       "expectationMatched": true,
-      "coreLatencyMs": 0.33
+      "coreLatencyMs": 0.025
     },
     {
       "id": "sa-02",
@@ -274,7 +274,7 @@
       "actualPass": true,
       "actualReason": null,
       "expectationMatched": true,
-      "coreLatencyMs": 0.036
+      "coreLatencyMs": 0.024
     },
     {
       "id": "sa-03",
@@ -284,7 +284,7 @@
       "actualPass": true,
       "actualReason": null,
       "expectationMatched": true,
-      "coreLatencyMs": 0.032
+      "coreLatencyMs": 0.026
     },
     {
       "id": "sa-04",
@@ -294,7 +294,7 @@
       "actualPass": true,
       "actualReason": null,
       "expectationMatched": true,
-      "coreLatencyMs": 0.026
+      "coreLatencyMs": 0.023
     },
     {
       "id": "sa-05",
@@ -304,7 +304,7 @@
       "actualPass": true,
       "actualReason": null,
       "expectationMatched": true,
-      "coreLatencyMs": 0.025
+      "coreLatencyMs": 0.028
     },
     {
       "id": "sa-06",
@@ -314,7 +314,7 @@
       "actualPass": true,
       "actualReason": null,
       "expectationMatched": true,
-      "coreLatencyMs": 0.147
+      "coreLatencyMs": 0.135
     }
   ]
 }

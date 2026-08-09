@@ -10,7 +10,7 @@ const SYSTEM_PROMPT = `你是一个可信的学习诊断器。你会收到一个
 
 输出规则：
 - 只输出一个 JSON 对象，不要 Markdown、代码围栏或前后文。
-- summary、detail、reason、keyPoints 和 nextActions 使用简洁中文。
+- summary、detail、reason、keyPoints 和 nextActions 使用输入 locale 指定的语言；未提供 locale 时使用简洁中文。
 - nextActions 必须是学习者可以立即执行的具体动作。
 - optionAnalysis 只分析题目实际存在的选项；非选项题可返回空数组。
 - diagnosis.type 只能是 concept_gap、misread、memory_gap、calculation_error、expression_gap、unknown。

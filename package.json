@@ -1,6 +1,6 @@
 {
   "name": "@agnostic-ap/grounded-study-explainer",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Provider-neutral grounded study explanation, validation, and deterministic evaluation for TypeScript.",
   "repository": {
     "type": "git",
@@ -23,6 +23,7 @@
     "build": "tsc -p tsconfig.json",
     "test": "node --import tsx --test test/*.test.ts",
     "eval": "node --import tsx cli/evaluate.ts",
+    "prepare": "npm run build",
     "prepublishOnly": "npm test && npm run build"
   },
   "keywords": [
@@ -44,6 +45,7 @@
     "examples",
     "test",
     "README.md",
+    "README.zh-CN.md",
     "LICENSE"
   ],
   "devDependencies": {

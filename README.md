@@ -1,5 +1,7 @@
 # grounded-study-explainer
 
+[![CI](https://github.com/agnostic-ap/grounded-study-explainer/actions/workflows/ci.yml/badge.svg)](https://github.com/agnostic-ap/grounded-study-explainer/actions/workflows/ci.yml)
+
 Provider-neutral TypeScript primitives for generating, parsing, validating, and deterministically evaluating evidence-grounded study explanations.
 
 The package solves a narrow problem: an application supplies reviewed evidence with stable IDs, a model returns a structured learning diagnosis, and the package rejects malformed output or citations outside the supplied allowlist. It has no dependency on a web framework, ORM, UI library, database, or model vendor.
@@ -33,7 +35,7 @@ When published, install it as:
 npm install @agnostic-ap/grounded-study-explainer
 ```
 
-The package is currently prepared as a standalone module but is not claimed to be published until a public registry or repository URL exists.
+The source is published as a standalone repository. The package is not claimed to be available from npm until a registry release exists.
 
 ## Basic use
 
